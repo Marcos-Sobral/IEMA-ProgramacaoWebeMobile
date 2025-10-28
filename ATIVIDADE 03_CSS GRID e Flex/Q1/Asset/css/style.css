@@ -1,0 +1,106 @@
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cor-fundo: #ffffff;
+            --cor-principal: #007bff;
+            --cor-secundaria: #e0e0e0;
+            --cor-texto: #19183B;
+        }
+        
+        /* Centralizar na tela */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--cor-secundaria);
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Container do formulário */
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: var(--cor-fundo);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Formulário */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--cor-texto);
+        }
+        
+        .login-form label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--cor-texto);
+        }
+        
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+            font-size: 16px;
+            border: 1px solid var(--cor-secundaria);
+            border-radius: 6px;
+            background-color: #f9f9f9;
+            color: var(--cor-texto);
+        }
+        
+        .login-form input:focus {
+            border-color: var(--cor-principal);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+        }
+        
+        /* Checkbox */
+        .checkbox-area {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Botão */
+        .btn-blue {
+            padding: 0.6rem 1.5rem;
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            background-color: var(--cor-principal);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-blue:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Link de cadastro */
+        .cadastro-link {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 14px;
+        }
+        
+        .cadastro-link a {
+            color: var(--cor-principal);
+            text-decoration: none;
+            font-weight: bold;
+        }

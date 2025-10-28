@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>👋 Olá, eu sou uma página HTML!</h1>
+        <p>Esta página foi criada para mostrar as principais tags do HTML. É simples, mas poderosa!</p>
+        <p>Você pode usar HTML para estruturar textos, adicionar imagens, links e muito mais.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>📌 Sobre mim</h2>
+            <p>Você pode usar HTML para estruturar textos, adicionar imagens, links e muito mais.</p>
+            
+            <h3>🔧 Ferramentas que estou usando:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS (em breve!)</li>
+                <li>JavaScript (quando você estiver pronto!)</li>
+            </ul>
+
+            <h3>📚 Passos para aprender HTML:</h3>
+            <ol>
+                <li>Aprender as tags básicas</li>
+                <li>Praticar com exemplos</li>
+                <li>Criar seus próprios projetos</li>
+            </ol>
+            
+            <p>Quer aprender mais? 
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Clique aqui para acessar a MDN Web Docs</a>.
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oryctolagus_cuniculus_Tasmania_2.jpg/330px-Oryctolagus_cuniculus_Tasmania_2.jpg" alt="Imagem" srcset="">
+        </section>
+
+        <section>
+            <h2>🖼️ Uma imagem para alegrar o dia:</h2>
+            <figure>
+                <img src="Asset/img/meme_html.jpeg" alt="Um meme sobre HTML que diz: Eu, explicando por que usar tags semânticas." width="300">
+                <figcaption>Meme para te lembrar da importância da semântica!</figcaption>
+            </figure>
+            
+            <h2>🎥 Vídeo de Apresentação</h2>
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+        </section>
+
+        <section>
+            <h2>📊 Tabela de Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Disponível</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>R$ 120</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <td>R$ 950</td>
+                        <td>Não</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>📬 Fale comigo</h2>
+            <form action="/enviar" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com ❤️ por Marcos. Última atualização: 25 de agosto de 2025.</p>
+    </footer>
+</body>
+</html>
