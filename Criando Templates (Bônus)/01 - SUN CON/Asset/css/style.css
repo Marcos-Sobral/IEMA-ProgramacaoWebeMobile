@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+header {
+  background-color: #FEFEFF;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  padding: 0% 3%;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  gap: 0.4rem;
+  color: black;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+
+body {
+  background-color: #FEFEFF;
+}
+
+.produtoDestaque {
+  background-color: #EAEEEF;
+  margin: 5%;
+  padding: 4%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.produtoDestaque div span {
+  color: orange;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "DM Sans", sans-serif;
+}
+.produtoDestaque div h2 {
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: "DM Sans", sans-serif;
+}
+.produtoDestaque div p {
+  font-family: "Inter", sans-serif;
+  color: gray;
+}
+.produtoDestaque button {
+  background-color: #201b21;
+  padding: 20px 80px;
+  border-radius: 10px;
+  margin-top: 7vh;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.produtoDestaque button span {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.produtoDestaque button img {
+  height: 100%;
+}
+.produtoDestaque img {
+  height: 100%;
+}
+
+.listaProduto {
+  margin: 5%;
+}
+.listaProduto h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+.listaProduto .produtos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.listaProduto .produtos div {
+  display: flex;
+  flex-direction: column;
+}
+.listaProduto .produtos div img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.listaProduto .produtos div span {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .produtoDestaque div span {
+    font-size: 2.3rem;
+  }
+  .produtoDestaque div h2 {
+    font-size: 2.6rem;
+  }
+  .produtoDestaque div button {
+    padding: 5% 20%;
+  }
+  .produtoDestaque div button span {
+    font-size: 18px;
+  }
+  .produtoDestaque div button img {
+    width: 20px;
+  }
+  .produtoDestaque img {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .produtoDestaque {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .produtoDestaque div {
+    text-align: center;
+  }
+  .produtoDestaque div button {
+    margin-top: 5vh;
+    justify-content: center;
+    width: 80vw;
+  }
+  .produtoDestaque img {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
