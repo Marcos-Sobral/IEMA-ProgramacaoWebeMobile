@@ -14,6 +14,8 @@ function ArrayLiteral(){
     console.log(frutas);
 }
 
+ArrayLiteral();
+
 function ArrayConstrutor() {
     //cada argumento vira um elemento do array.
     let numeros = new Array(1, 2, 3, 4);

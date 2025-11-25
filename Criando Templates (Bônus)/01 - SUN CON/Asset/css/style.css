@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -104,9 +104,52 @@ body {
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.listaProduto .produtos div span {
+.listaProduto .produtos div h3 {
   font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.listaProduto .produtos div span {
   margin-bottom: 10px;
+  color: grey;
+}
+.listaProduto .produtos div p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  height: 16vh;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  align-items: center;
+}
+footer div p {
+  width: 100%;
+}
+footer div div {
+  display: flex;
+  justify-content: start;
+  gap: 0.8rem;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+footer ul li a img {
+  height: 6vh;
 }
 
 @media (max-width: 1200px) {
@@ -144,5 +187,9 @@ body {
   }
   .produtoDestaque img {
     width: 50%;
+  }
+  footer div {
+    flex-wrap: wrap;
+    gap: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
